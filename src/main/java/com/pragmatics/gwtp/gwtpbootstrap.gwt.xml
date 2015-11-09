@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.6.1//EN"
+				"https://raw.githubusercontent.com/gwtproject/gwt/2.6.1/distro-source/core/src/gwt-module.dtd">
+<module rename-to="gwtpbootstrap">
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.inject.Inject' />
+
+	<!-- Default css -->
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	<!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/> -->
+
+	<!-- Other module inherits -->
+	<inherits name='com.gwtplatform.dispatch.Dispatch' />
+	<inherits name='com.gwtplatform.mvp.MvpWithEntryPoint' />
+<!-- 	<inherits name="com.wallissoftware.pushstate.PushState" /> -->
+
+	<source path='client' />
+	<source path='shared' />
+
+	<set-configuration-property name="gin.ginjector.modules"
+		value="com.pragmatics.gwtp.client.gin.ClientModule" />
+
+	<!-- GWT Rest Support -->
+	<inherits name="org.fusesource.restygwt.RestyGWT" />
+	<!-- GWT Bootstrap -->
+	<inherits name="org.gwtbootstrap3.GwtBootstrap3" />
+	<inherits name="org.gwtbootstrap3.GwtBootstrap3Theme" />
+
+	<!-- GWT Query -->
+	<inherits name='com.google.gwt.query.Query' />
+</module>
