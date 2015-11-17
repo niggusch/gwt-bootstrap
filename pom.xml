@@ -101,7 +101,7 @@
 					<hostedWebapp>${webappDirectory}</hostedWebapp>
 					<runTarget>gwtp-bootstrap.jsp</runTarget>
 					<modules>
-						<module>com.pragmatics.gwtp.gwtp-bootstrap</module>
+						<module>com.pragmatics.gwtp.gwtpbootstrap</module>
 					</modules>
 				</configuration>
 				<executions>
